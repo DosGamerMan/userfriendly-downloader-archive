@@ -26,7 +26,7 @@ do
 			fi
 
 			echo -ne Searching number $n\\r
-			sleep 10
+			sleep 60
 			url="https://web.archive.org/web/http://ars.userfriendly.org/cartoons/?id=${y}${m}${rd}"
 			wget $url -O tmp.html 
 				image1=`cat tmp.html | grep -o "http://www.userfriendly.org/cartoons/archives/.\+\.gif"`
